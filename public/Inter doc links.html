@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Document Links</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            margin: 10px;
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+        }
+        .option span{
+            margin-right: 20px;
+        }
+        .brand{
+            font-weight: bold;
+            font-style: italic;
+            color: aqua;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        main{
+            width: 100%;
+            height: 500px;
+        }
+        iframe{
+            border: none;
+        }
+        .icons:hover{
+            color: brown;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <span>Shopper</span>
+        </div>
+        <div class="option">
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+        </div>
+        <div class="icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-person"></span>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Amazon cards in one.html" target="framebody">Amazon</a></li>
+                <li><a href="Netflix.html" target="framebody">Women Fashion's</a></li>
+                <li><a href="flipkartproduct.html" target="framebody">Kid's Fashion's</a></li>
+            </ul>
+        </nav>
+        <main>
+            <iframe width="100%" height="100%" name="framebody"></iframe>
+        </main>
+    </section>
+</body>
+</html>

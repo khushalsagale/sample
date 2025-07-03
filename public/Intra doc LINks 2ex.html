@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intra Document List Ex2</title>
+    <!-- Intra Document List Ex:-2 -->
+    <style>
+        .topic {
+            border: 2px solid gray;
+            color: black;
+        }
+        .topic:target{
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+        }
+        main{
+            display: flex;
+            gap: 100px;
+            padding-left: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            margin: 100px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Html"><span>Html</a></li>
+            <li><a href="#Css"><span>Css</a></li>
+            <li><a href="#Js"><span>Js</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="topic" id="Html">
+            <h2>Html language</h2>
+        </div>
+        <div class="topic" id="Css">
+            <h2>Css language</h2>
+        </div>
+        <div class="topic" id="Js">
+            <h2>Js language</h2>
+        </div>
+    </main>
+</body>
+</html>

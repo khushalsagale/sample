@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .id{
+            display: flex;
+        }
+        .id li{
+            margin-right: 100px;
+        }
+        .options li{
+            display: inline;
+        }
+        .items{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .points{
+            columns: 2;
+        }
+        .king{
+            border:2px solid red;
+            width:100px;
+            height:60px;
+            overflow: scroll;
+        }
+        li{
+            list-style:none;
+            font-size:50px;
+            background-color: black;
+            color: blanchedalmond;
+            margin: 10px;
+            width: 200px;
+
+        }
+        li:hover{
+            background-color:brown;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+     <ol>
+        <li>itam </li>
+        <li>item </li>
+        <li>itam </li>
+            <ol type="a">
+                <li>item </li>
+                <li>itam </li>
+                <li>item </li></ol>
+        <li>itam </li>
+        <li>item </li>
+    </ol>
+
+    <!--good code-->
+    <ol>
+        <li> parent
+            <ol type="A" start="G" reversed>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+            </ol>
+        </li>
+    </ol>
+    <!-- bad code-->
+    <ol>
+        <li> parent</li>
+            <ol type="A" start="G" reversed>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+            </ol>
+    </ol>
+
+
+<!--how to arange item side by side ?-->
+<!--1 answer by using display:flex-->
+    <ol type="1">
+        <li>Question_____________?
+            <ol type="A" class="id">
+            <li>option-1</li>
+            <li>option-2</li>
+            <li>option-3</li>
+            <li>option-4</li>
+            </ol>
+        </li>
+    </ol>
+<!-- 2 answer by using display:inline-->
+    <ol type="1">
+        <li>Question_____________?
+            <ol type="A" class="options">
+            <li>option-1</li>
+            <li>option-2</li>
+            <li>option-3</li>
+            <li>option-4</li>
+            </ol>
+        </li>
+    </ol>
+
+
+<!-- how to keep list items in multiple cloumns ?-->
+ <!--1st answer by using display:grid-->
+    <ol type="1">
+        <li>Question_____________?
+            <ol type="A" class="items">
+                <li>option-1</li>
+                <li>option-2</li>
+                <li>option-3</li>
+                <li>option-4</li>
+            </ol>
+        </li>
+    </ol>
+
+<!--2st answer by using display:columns-->
+    <ol type="1">
+        <li>Question_____________?
+            <ol type="A" class="points">
+                <li>option-1</li>
+                <li>option-2</li>
+                <li>option-3</li>
+                <li>option-4</li>
+            </ol>
+        </li>
+    </ol> -->
+
+    <!--how to create a sxrollable list ?-->
+
+    <ol type="1" class="king">
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>phytan</li>
+        <li>java</li>
+        <li>asp.net</li>
+        <li>mangodb</li>
+        <li>react</li>
+    </ol>
+    
+    <!--how to remove numbering for ordered list and using hover effect ? -->
+    <ol type="a" class="randam">
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>phytan</li>
+        <li>java</li>
+        <li>asp.net</li>
+        <li>mangodb</li>
+        <li>react</li>
+    </ol>
+</body>
+</html>
