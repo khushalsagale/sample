@@ -1,19 +1,62 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
-    <title>My Page</title>
+  <title>JavaScript Function Example</title>
+  <script>
+    // JavaScript function
+    function showMessage() {
+      alert("Hello!this is My first program.");
+    }
+  </script>
 </head>
 <body>
 
-<h1>Hello World</h1>
+  <h1>Welcome to My Page</h1>
+  <button onclick="showMessage()">Click Me</button>
 
-<button onclick="showMessage()">Click Me</button>
+</body>
+</html> -->
 
-<script>
-    function showMessage() {
-        alert("Hello! I Am Khushal Anil Sagale");
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Callbacks & Higher-Order Functions</title>
+</head>
+<body>
+
+  <h2>Callbacks & Higher-Order Function Demo</h2>
+  <button onclick="runCalculation()">Run Calculation</button>
+
+  <p id="result"></p>
+
+  <script>
+    // Higher-order function: accepts another function as an argument
+    function calculate(a, b, callback) {
+      return callback(a, b);
     }
-</script>
+
+    // Callback functions
+    function add(x, y) {
+      return x + y;
+    }
+
+    function multiply(x, y) {
+      return x * y;
+    }
+
+    function runCalculation() {
+      // Using the calculate function with different callbacks
+      let sum = calculate(5, 3, add);
+      let product = calculate(5, 3, multiply);
+
+      document.getElementById("result").innerHTML =
+        "Sum: " + sum + "<br>Product: " + product;
+    }
+  </script>
 
 </body>
 </html>
+
+
