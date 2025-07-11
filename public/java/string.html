@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript String Methods</title>
+</head>
+<body>
+
+  <h2>JavaScript String Methods Example</h2>
+
+  <input type="text" id="userInput" placeholder="Enter a string" style="width: 300px;">
+  <br><br>
+
+  <button onclick="showStringMethods()">Show String Info</button>
+
+  <div id="output" style="margin-top: 20px;"></div>
+
+  <script>
+    function showStringMethods() {
+      const str = document.getElementById("userInput").value;
+
+      if (str.trim() === "") {
+        document.getElementById("output").innerHTML = "Please enter a string.";
+        return;
+      }
+
+      let output = `
+        <p><strong>Original:</strong> ${str}</p>
+        <p><strong>Uppercase:</strong> ${str.toUpperCase()}</p>
+        <p><strong>Lowercase:</strong> ${str.toLowerCase()}</p>
+        <p><strong>Length:</strong> ${str.length}</p>
+        <p><strong>Includes 'hello'?</strong> ${str.includes("hello")}</p>
+        <p><strong>Replace 'hello' with 'hi':</strong> ${str.replace("hello", "Namaskar")}</p>
+      `;
+
+      document.getElementById("output").innerHTML = output;
+    }
+  </script>
+
+</body>
+</html>
