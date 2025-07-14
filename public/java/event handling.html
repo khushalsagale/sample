@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling Example</title>
+</head>
+<body>
+
+  <h2>JavaScript Event Handling Example</h2>
+
+  <button id="clickMeBtn">Click Me!</button>
+  <p id="message"></p>
+
+  <script>
+    // Get reference to the button and paragraph
+    const button = document.getElementById("clickMeBtn");
+    const messagePara = document.getElementById("message");
+
+    // Add event listener to the button
+    button.addEventListener("click", function() {
+      messagePara.textContent = "hey! any problem !";
+    });
+  </script>
+
+</body>
+</html>
