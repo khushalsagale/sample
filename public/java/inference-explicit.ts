@@ -1,8 +1,8 @@
 // TYPE INFERENCE (TypeScript guesses the type)
 
 let inferredName = "Ankit";         // inferred like as string
-let inferredAge = 23;               // inferred like as number
-let isMember = true;                // inferred like as boolean
+let inferredAge = 23;               // number
+let isMember = true;                // boolean
 
 function inferredMultiply(x = 2, y = 3) {
   return x * y;                     // return type inferred as number
